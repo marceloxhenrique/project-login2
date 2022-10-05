@@ -6,53 +6,46 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 html, body {
     background-color: #e8e8e8;
-    background-position: relative;
     position: relative;
     height: 100vh;
-    margin: auto;
+    width: 100vw;
+
 }
+
 
 main {
+    /* border-radius: 10px; */
     position: absolute;
-    /* background-color: black ; */
-    display: flex;
-    flex-direction: row;
-    height: 90vh;
-    width: 95vw;
     top: 50%;
     left: 50%;
+    display: flex;
+    background-color: rgb(236, 246, 255);
+    flex-direction: row;
     transform: translate(-50%, -50%);
-    
-   
+    border-radius: 10px 0px 0px 10px;
 }
 
-main > #leftSide{
-    display: none;
-    width: 60%;
-}
-main > #leftSide > #leftImg {
-    
-    height: 100%;
+div#leftSide {
+    background-color: aqua;
+    background-image: url("../pictures/pexels-motional.jpg");
     background-size: cover;
-    
+    width: 700px;
+    height: 568px;
+    display: none;
+    border-radius: 10px 0px 0px 10px;
 }
 
-main > #rightSide {
-    position: absolute;
+div#rightSide {
     background-color: white;
     width: 300px;
     height: 568px;
-    padding: 100px 15px 15px 15px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-main >  #rightSide #imagem {
-    margin-top: -80px;
+    padding: 10px 15px 15px 15px;
+    
+     
+    
+    
     
 }
 
